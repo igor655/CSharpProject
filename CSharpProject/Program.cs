@@ -21,9 +21,15 @@ namespace CSharpProject
 
         static void Main(string[] args)
         {
-           const  DayTime now = DayTime.Evening;
+            const DayTime dayTime = DayTime.Morning;
+           
+            if (dayTime == DayTime.Morning)
+            {
+                Console.WriteLine("Доброе утро");
+            }
+            else
+                Console.WriteLine("Привет");
 
-            Console.WriteLine(now);
         }
     }
 }
